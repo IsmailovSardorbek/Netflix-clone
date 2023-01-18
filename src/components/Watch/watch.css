@@ -12,6 +12,8 @@
 
 .watch-now {
     margin: 2rem 0;
+    border-bottom: 7px solid #444;
+    padding:3rem 0;
 }
 
 .w-left {
@@ -22,8 +24,8 @@
 
 .w-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 0.7rem;
     padding: 0 1rem;
 }
 

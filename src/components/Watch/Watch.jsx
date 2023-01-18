@@ -11,7 +11,7 @@ export default function Watch() {
                         <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV without paying more.</p>
                     </div>
                     <div className="w-right">
-                        <img src={macImg} alt=""/>
+                        <img src={macImg} />
                     </div>
                 </div>
             </div>

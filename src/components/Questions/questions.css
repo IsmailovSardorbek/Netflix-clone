@@ -1,0 +1,12 @@
+.questions h1 {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 3rem;
+}
+
+.questions {
+    margin: 4rem 0;
+    border-bottom: 7px solid #333;
+    padding-bottom: 5rem;
+}

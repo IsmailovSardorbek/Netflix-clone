@@ -1,0 +1,40 @@
+.footer {
+    color: #777;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.links-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 2rem 0;
+    font-size: 14px;
+}
+
+.links-list a {
+    text-decoration: none;
+    color: #666;
+}
+
+.links-list a:hover {
+    text-decoration: underline;
+}
+
+.links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.5rem;
+}
+
+.border-gray {
+    border: 1px solid #444;
+    color: #555;
+}
+
+.footer p {
+    margin-top: 1rem;
+    font-size: 14px;
+}

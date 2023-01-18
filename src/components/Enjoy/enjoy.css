@@ -1,12 +1,12 @@
 .enjoy {
-    padding:1rem;
+    padding:2rem 1.5rem 3rem 1.5rem;
     border-bottom: 8px solid #444;
     margin: 2rem 0;
 }
 
 .e-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .enjoy-l {
@@ -35,8 +35,7 @@
         text-align: center;
     }
 
-
     .enjoy-l p {
-        font-size: 18px;
+        font-size: 17px;
     }
 }

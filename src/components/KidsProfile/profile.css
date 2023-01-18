@@ -1,0 +1,46 @@
+.profile {
+    margin-bottom: 3rem;
+    border-bottom: 7px solid #444;
+    padding: 4rem 1rem;
+}
+
+
+.p-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.p-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.p-right h1 {
+    font-size:45px;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    line-height: 120%;
+}
+
+.p-right p {
+    font-size: 25px;
+    line-height: 140%;
+}
+
+
+@media (width <= 600px) {
+    .p-right {
+        text-align: center;
+    }
+
+    .p-right h1 {
+        font-size: 28px;
+    }
+
+    .p-right p {
+        font-size: 17px;
+    }
+}

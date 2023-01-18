@@ -1,0 +1,46 @@
+.open-answer {
+    background: transparent;
+    color: #fff;
+    font-size: 40px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+
+
+.rotate {
+    rotate: 45deg;
+}
+
+.question {
+    margin: 0 auto 1.5px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 700px;
+    background-color: #333;
+    padding: 1rem 1.5rem;
+}
+
+.question span {
+    font-size: 25px;
+}
+
+.answer {
+    background: #333;
+    margin-bottom: 0.5rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    height:0;
+    overflow: hidden;
+    transition: all 250ms ease;
+    padding: 0rem 1.5rem;
+    font-size: 25px;
+}
+
+.answer.active {
+    height: max-content;
+    padding: 1rem 1.5rem;
+}
