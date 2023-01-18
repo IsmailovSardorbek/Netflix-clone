@@ -1,0 +1,42 @@
+.enjoy {
+    padding:1rem;
+    border-bottom: 8px solid #444;
+    margin: 2rem 0;
+}
+
+.e-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.enjoy-l {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.enjoy-l h1 {
+    font-size: 50px;
+    margin-bottom: 1.4rem;
+}
+
+.enjoy-l p {
+    font-size: 27px;
+    line-height: 130%;
+}
+
+
+@media (width <= 600px) {
+    .enjoy-l h1 {
+        font-size: 30px;
+    }
+
+    .enjoy-l {
+        text-align: center;
+    }
+
+
+    .enjoy-l p {
+        font-size: 18px;
+    }
+}

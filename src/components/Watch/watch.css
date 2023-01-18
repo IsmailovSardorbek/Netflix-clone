@@ -1,0 +1,43 @@
+.w-left h1 {
+    font-size:45px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    line-height: 120%;
+}
+
+.w-left p {
+    font-size: 25px;
+    line-height: 140%;
+}
+
+.watch-now {
+    margin: 2rem 0;
+}
+
+.w-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.w-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1rem;
+    padding: 0 1rem;
+}
+
+@media (width <= 600px) {
+    .w-left {
+        text-align: center;
+    }
+
+    .w-left h1 {
+        font-size: 28px;
+    }
+
+    .w-left p {
+        font-size: 17px;
+    }
+}
+

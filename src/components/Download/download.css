@@ -1,0 +1,93 @@
+.download {
+    min-height: 400px;
+    border-bottom: 7px solid #444;
+    padding: 2rem 0 4rem 0;
+}
+
+.d-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    margin: 0 1rem;
+    gap: 5rem;
+}
+
+.d-left {
+    background-image: url(../../images/mobile.jpg);
+    background-position:center center;
+    background-size: cover;
+}
+
+.book-img {
+    width: 55px;
+}
+
+.download-box {
+    border: 2px solid #444;
+    border-radius: 14px;
+    padding: 0.7rem;
+    background: #000;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+    max-width: 350px;
+}
+
+.box-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.downloading {
+    color: #0071eb;
+}
+
+.download-gif {
+    width: 55px;
+}
+
+.box-title p {
+    font-weight: 500;
+}
+
+.d-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.d-right h1 {
+    font-size:45px;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    line-height: 120%;
+}
+
+.d-right p {
+    font-size: 25px;
+    line-height: 140%;
+}
+
+
+@media (width <= 600px) {
+    .d-right {
+        text-align: center;
+    }
+
+    .d-right h1 {
+        font-size: 28px;
+    }
+
+    .d-right p {
+        font-size: 17px;
+    }
+
+    .d-wrapper {
+        grid-template-columns: revert;
+    }
+}

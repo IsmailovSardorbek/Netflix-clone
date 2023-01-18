@@ -1,0 +1,61 @@
+.hero {
+    text-align: center;
+    color: #fff;
+    width: 100%;
+}
+
+.hero-title {
+    font-size: 45px;
+    margin-bottom: 1.5rem;
+}
+
+.hero-subtitle {
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+.hero-text {
+    font-size: 25px;
+    margin-bottom: 2.5rem;
+}
+
+.finish-sign-up {
+    text-decoration: none;
+    color: #fff;
+    background: red;
+    padding: 1rem 2rem;
+    font-size: 23px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    width: max-content;
+    margin: auto;
+    gap: 0.5rem;
+}
+
+.fa-chevron-right {
+    font-size: 17px;
+}
+
+.hero-content {
+    padding-top: 4rem;
+}
+
+@media (width <= 600px) {
+    .hero-subtitle {
+        font-size: 20px;
+    }
+
+    .hero-title {
+        font-size: 30px;
+    }
+
+    .hero-text {
+        font-size: 18px;
+    }
+
+    .finish-sign-up {
+        font-size: 17px;
+        padding: 0.7rem 1rem;
+    }
+}
