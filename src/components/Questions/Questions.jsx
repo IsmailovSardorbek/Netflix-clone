@@ -8,7 +8,7 @@ export default function Questions() {
     const [questions, setQuestions] = useState(questionsList)
 
     function openAnswer(question) {
-        setQuestions(questionsList.map(q => {
+        setQuestions(questions.map(q => {
                 if(q.text === question) {
                     q.open = !q.open
                 } else {
