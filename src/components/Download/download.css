@@ -6,7 +6,7 @@
 
 .d-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     margin: 0 1rem;
     gap: 5rem;
 }
@@ -87,7 +87,4 @@
         font-size: 17px;
     }
 
-    .d-wrapper {
-        grid-template-columns: revert;
-    }
 }
