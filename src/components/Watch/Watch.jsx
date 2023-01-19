@@ -1,14 +1,19 @@
 import './watch.css'
 import macImg from '../../images/imac.png'
+import {Context} from "../../App";
+import {useContext} from "react";
 
 export default function Watch() {
+
+    const {selectedLanguage} = useContext(Context)
+
     return (
         <div className="watch-now">
             <div className="container">
                 <div className="w-wrapper">
                     <div className="w-left">
-                        <h1>Watch everywhere.</h1>
-                        <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV without paying more.</p>
+                        <h1>{selectedLanguage.watchSectionTitle}</h1>
+                        <p>{selectedLanguage.watchSectionDescription}</p>
                     </div>
                     <div className="w-right">
                         <img src={macImg} />

@@ -1,55 +1,36 @@
 import './footer.css'
+import {useContext} from "react";
+import {Context} from "../../App";
 
 export default function Footer() {
+
+    const {selectedLanguage} = useContext(Context)
+
     return (
         <footer className='footer'>
             <div className="container">
-                <p>Questions? Contact us.</p>
+                <p>{selectedLanguage.footerQuestion}</p>
                 <div className="links-grid">
                     <div className="links-grid-column">
                         <ul className='links-list'>
                             <li>
                                 <a href="#">
-                                    FAQ
+                                    {selectedLanguage.faq}
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    Investor Relations
+                                    {selectedLanguage.investors}
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    Privacy
+                                    {selectedLanguage.privacy}
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    Speed Test
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div className="links-grid-column">
-                        <ul className='links-list'>
-                            <li>
-                                <a href="#">
-                                    Help Center
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Jobs
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Cookie Preferences
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Legal Notices
+                                    {selectedLanguage.speedTest}
                                 </a>
                             </li>
                         </ul>
@@ -58,22 +39,22 @@ export default function Footer() {
                         <ul className='links-list'>
                             <li>
                                 <a href="#">
-                                    Account
+                                    {selectedLanguage.helpCenter}
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    Ways to Watch
+                                    {selectedLanguage.jobs}
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    Corporate Information
+                                    {selectedLanguage.cookies}
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    Only on Netflix
+                                    {selectedLanguage.notices}
                                 </a>
                             </li>
                         </ul>
@@ -82,7 +63,31 @@ export default function Footer() {
                         <ul className='links-list'>
                             <li>
                                 <a href="#">
-                                    Media Center
+                                    {selectedLanguage.account}
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    {selectedLanguage.waysToWatch}
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    {selectedLanguage.info}
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    {selectedLanguage.netflix}
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="links-grid-column">
+                        <ul className='links-list'>
+                            <li>
+                                <a href="#">
+                                    {selectedLanguage.media}
                                 </a>
                             </li>
                             <li>

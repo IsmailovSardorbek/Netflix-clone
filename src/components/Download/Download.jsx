@@ -2,7 +2,12 @@ import './download.css'
 import mobileImg from '../../images/mobile.jpg'
 import bookImage from '../../images/boxshot.png'
 import downloadGIF from '../../images/download-icon.gif'
+import {useContext} from "react";
+import {Context} from "../../App";
 export default function Download() {
+
+    const {selectedLanguage} = useContext(Context)
+
     return (
         <div className='download'>
             <div className="container">
@@ -22,8 +27,8 @@ export default function Download() {
                         </div>
                     </div>
                     <div className="d-right">
-                        <h1>Download your shows to watch offline.</h1>
-                        <p>Save your favorites easily and always have something to watch.</p>
+                        <h1>{selectedLanguage.downloadSectionTitle}</h1>
+                        <p>{selectedLanguage.downloadSectionDescription}</p>
                     </div>
                 </div>
             </div>

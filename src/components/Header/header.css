@@ -16,9 +16,3 @@
     height: 100%;
 }
 
-
-@media (width <= 850px) {
-    .header {
-        min-height: 70vh;
-    }
-}

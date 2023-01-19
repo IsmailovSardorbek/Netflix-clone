@@ -1,6 +1,11 @@
 import Question from "../Question/Question";
 import './questions-list.css'
+import {useContext} from "react";
+import {Context} from "../../App";
 export default function QuestionsList({ questions, openAnswer }) {
+
+    const {selectedLanguage} = useContext(Context)
+
     return (
         <>
             <ul className='questions-list'>
@@ -11,7 +16,7 @@ export default function QuestionsList({ questions, openAnswer }) {
                 }
             </ul>
             <a href="#" className='finish-sign-up'>
-                Finish Sign Up <i className="fa-solid fa-chevron-right"></i>
+                {selectedLanguage.finishSignUp} <i className="fa-solid fa-chevron-right"></i>
             </a>
         </>
 

@@ -25,7 +25,6 @@ export default function Questions() {
                 <h1>Frequently Asked Questions</h1>
 
                 <QuestionsList questions={questions} openAnswer={openAnswer}/>
-
             </div>
         </div>
     )
