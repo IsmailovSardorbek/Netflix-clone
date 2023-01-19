@@ -31,16 +31,3 @@
 }
 
 
-@media (width <= 600px) {
-    .p-right {
-        text-align: center;
-    }
-
-    .p-right h1 {
-        font-size: 28px;
-    }
-
-    .p-right p {
-        font-size: 17px;
-    }
-}

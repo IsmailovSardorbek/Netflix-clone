@@ -28,18 +28,3 @@
     gap: 0.7rem;
     padding: 0 1rem;
 }
-
-@media (width <= 600px) {
-    .w-left {
-        text-align: center;
-    }
-
-    .w-left h1 {
-        font-size: 28px;
-    }
-
-    .w-left p {
-        font-size: 17px;
-    }
-}
-

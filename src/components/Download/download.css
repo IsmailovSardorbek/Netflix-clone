@@ -74,17 +74,3 @@
 }
 
 
-@media (width <= 600px) {
-    .d-right {
-        text-align: center;
-    }
-
-    .d-right h1 {
-        font-size: 28px;
-    }
-
-    .d-right p {
-        font-size: 17px;
-    }
-
-}

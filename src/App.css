@@ -7,10 +7,8 @@
 }
 
 img {
-  max-width: 75%;
-  height: auto;
-  margin: auto;
-  display: block;
+  max-width: 100%;
+  vertical-align: middle;
 }
 
 html {
@@ -23,3 +21,168 @@ body {
   font-family: 'Ubuntu', sans-serif;
 }
 
+
+@media (width <= 380px) {
+  .nav-wrapper {
+    padding: 1.5rem 0.5rem !important;
+  }
+  .svg-icon-netflix-logo {
+    width: 90px !important;
+  }
+
+  .language-select {
+    padding: 0.3rem 0.5rem !important;
+    font-size: 14px !important;
+  }
+
+  .nav-right {
+    gap: 0.3rem !important;
+  }
+
+  .sign-out {
+    font-size: 14px !important;
+  }
+
+  .hero-subtitle {
+    font-size: 25px !important;
+  }
+
+  .hero-title {
+    font-size: 30px !important;
+  }
+
+  .hero-text {
+    font-size: 18px !important;
+  }
+
+  .finish-sign-up {
+    font-size: 17px !important;
+    padding: 1rem !important;
+  }
+
+  .fa-chevron-right {
+    font-size: 14px !important;
+  }
+
+  .enjoy-l, .d-right, .w-left, .p-right {
+    text-align: center;
+  }
+
+  .enjoy-l h1, .d-right h1, .w-left h1, .p-right h1 {
+    font-size: 30px !important;
+  }
+
+  .enjoy-l p, .d-right p, .w-left p, .p-right p {
+    font-size: 17px !important;
+  }
+
+  .questions h1 {
+    font-size: 27px !important;
+  }
+
+  .question span {
+    font-size: 15px !important;
+  }
+
+  .open-answer {
+    font-size: 20px !important;
+  }
+
+  .answer {
+    font-size: 16px !important;
+  }
+}
+
+
+@media (381px <= width <= 426px) {
+  .nav-right {
+    gap: 0.5rem !important;
+  }
+
+  .hero-subtitle {
+    font-size: 28px !important;
+  }
+
+  .hero-title {
+    font-size: 34px !important;
+  }
+
+  .hero-text {
+    font-size: 20px !important;
+  }
+
+  .finish-sign-up {
+    font-size: 17px !important;
+    padding: 1rem !important;
+  }
+
+  .enjoy-l, .d-right, .w-left, .p-right {
+    text-align: center;
+  }
+
+
+  .enjoy-l h1, .d-right h1, .w-left h1, .p-right h1 {
+    font-size: 32px !important;
+  }
+
+
+  .enjoy-l p, .d-right p, .w-left p, .p-right p {
+    font-size: 19px !important;
+  }
+
+  .question span {
+    font-size: 17px !important;
+  }
+
+  .open-answer {
+    font-size: 22px !important;
+  }
+
+  .answer {
+    font-size: 18px !important;
+  }
+}
+
+
+@media (426px <= width <= 768px) {
+  .hero-content {
+    padding-top: 2rem !important;
+  }
+
+  .hero-subtitle {
+    font-size: 30px !important;
+  }
+
+  .hero-title {
+    font-size: 36px !important;
+  }
+
+  .hero-text {
+    font-size: 22px !important;
+  }
+
+  .finish-sign-up {
+    font-size: 19px !important;
+    padding: 1rem !important;
+  }
+
+  .enjoy-l h1, .d-right h1, .w-left h1, .p-right h1 {
+    font-size: 34px !important;
+  }
+
+  .enjoy-l p, .d-right p, .w-left p, .p-right p {
+    font-size: 21px !important;
+  }
+
+  .question span {
+    font-size: 21px !important;
+  }
+
+  .open-answer {
+    font-size: 25px !important;
+  }
+
+  .answer {
+    font-size: 20px !important;
+  }
+}

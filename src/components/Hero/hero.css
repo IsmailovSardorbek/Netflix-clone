@@ -41,21 +41,3 @@
     padding-top: 4rem;
 }
 
-@media (width <= 600px) {
-    .hero-subtitle {
-        font-size: 20px;
-    }
-
-    .hero-title {
-        font-size: 30px;
-    }
-
-    .hero-text {
-        font-size: 18px;
-    }
-
-    .finish-sign-up {
-        font-size: 17px;
-        padding: 0.7rem 1rem;
-    }
-}

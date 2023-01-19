@@ -65,22 +65,5 @@
     gap: 2rem;
 }
 
-@media (width <= 600px) {
-    .svg-icon-netflix-logo {
-        width:90px;
-    }
 
-    .language-select {
-        font-size: 14px;
-        padding: 0 0.3rem;
-    }
-
-    .nav-right {
-        gap: 1rem;
-    }
-
-    .sign-out {
-        font-size: 14px;
-    }
-}
 

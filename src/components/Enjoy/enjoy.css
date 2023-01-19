@@ -6,7 +6,7 @@
 
 .e-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
 .enjoy-l {
@@ -25,17 +25,3 @@
     line-height: 130%;
 }
 
-
-@media (width <= 600px) {
-    .enjoy-l h1 {
-        font-size: 30px;
-    }
-
-    .enjoy-l {
-        text-align: center;
-    }
-
-    .enjoy-l p {
-        font-size: 17px;
-    }
-}
