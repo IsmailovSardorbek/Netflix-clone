@@ -7,7 +7,7 @@ import Questions from "./components/Questions/Questions";
 import Footer from "./components/Footer/Footer";
 import './App.css';
 
-function App() {
+export default function App() {
   return (
       <>
         <Header />
@@ -21,4 +21,4 @@ function App() {
   )
 }
 
-export default App;
+
