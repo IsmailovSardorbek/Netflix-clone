@@ -100,7 +100,7 @@ export default function Footer() {
                 </div>
                 <select className='language-select border-gray'>
                     <option value="English">English</option>
-                    <option value="Russian">Russian</option>
+                    <option value="Russian">Русский</option>
                 </select>
                 <p>Netflix Uzbekistan</p>
             </div>

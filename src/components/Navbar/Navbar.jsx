@@ -7,7 +7,7 @@ export default function Navbar() {
             <div className='navbar'>
                 <div className="container">
                     <div className="nav-wrapper">
-                        <div className="logo">
+                        <a className="logo" href='/'>
                             <svg viewBox="0 0 111 30" data-uia="netflix-logo" className="svg-icon svg-icon-netflix-logo"
                                  aria-hidden="true" focusable="false">
                                 <g id="netflix-logo">
@@ -16,11 +16,11 @@ export default function Navbar() {
                                         id="Fill-14"></path>
                                 </g>
                             </svg>
-                        </div>
+                        </a>
                         <div className="nav-right">
                             <select className='language-select'>
                                 <option value="English">English</option>
-                                <option value="Russian">Russian</option>
+                                <option value="Russian">Русский</option>
                             </select>
 
                             <button className='sign-out'>
