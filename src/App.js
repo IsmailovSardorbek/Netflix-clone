@@ -32,7 +32,7 @@ export default function App() {
               <Watch />
               <KidsProfile />
               <Questions />
-              <Footer />
+              <Footer onSelect={onSelect}/>
           </Context.Provider>
       </>
   )

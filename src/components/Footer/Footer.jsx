@@ -1,10 +1,12 @@
 import './footer.css'
-import {useContext} from "react";
+import {useContext, useRef} from "react";
 import {Context} from "../../App";
 
-export default function Footer() {
+export default function Footer({onSelect}) {
 
     const {selectedLanguage} = useContext(Context)
+
+    const selectRef = useRef()
 
     return (
         <footer className='footer'>
@@ -92,7 +94,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <a href="#">
-                                    Terms of Use
+                                    {selectedLanguage.terms}
                                 </a>
                             </li>
                             <li>
@@ -103,11 +105,11 @@ export default function Footer() {
                         </ul>
                     </div>
                 </div>
-                <select className='language-select border-gray'>
+                <select className='language-select border-gray' ref={selectRef} onChange={() => onSelect(selectRef.current.value.toLowerCase())}>
                     <option value="English">English</option>
                     <option value="Russian">Русский</option>
                 </select>
-                <p>Netflix Uzbekistan</p>
+                <p>Netflix {selectedLanguage.uzb}</p>
             </div>
         </footer>
     )

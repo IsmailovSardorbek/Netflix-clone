@@ -28,7 +28,10 @@
       "waysToWatch": "Ways to Watch",
       "info": "Corporate Information",
       "netflix": "Only on Netflix",
-      "media": "Media Center"
+      "media": "Media Center",
+      "terms": "Terms of Use",
+      "contact": "Contact Us",
+      "uzb": "Uzbekistan"
     }
   ],
   [
@@ -60,7 +63,10 @@
       "waysToWatch": "Способы просмотра",
       "info": "Корпоративная информация",
       "netflix": "Только на Netflix",
-      "media": "Медиацентр"
+      "media": "Медиацентр",
+      "terms": "Правила использования",
+      "contact": "Свяжитесь с нами",
+      "uzb": "Узбекистан"
     }
   ]
 ]

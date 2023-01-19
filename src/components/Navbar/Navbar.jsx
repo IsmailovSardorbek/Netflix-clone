@@ -24,7 +24,7 @@ export default function Navbar({ onSelect }) {
                             </svg>
                         </a>
                         <div className="nav-right">
-                            <select className='language-select' ref={optionRef} onClick={() => onSelect(optionRef.current.value.toLowerCase())} >
+                            <select className='language-select' ref={optionRef} onChange={() => onSelect(optionRef.current.value.toLowerCase())} >
                                 <option value="English">English</option>
                                 <option value="Russian">Русский</option>
                             </select>
