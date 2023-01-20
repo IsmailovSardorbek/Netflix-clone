@@ -1,4 +1,4 @@
-import {useState, createContext, useEffect} from "react";
+import {useState, createContext, useEffect, useRef} from "react";
 import Enjoy from "./components/Enjoy/Enjoy";
 import Header from "./components/Header/Header";
 import Download from "./components/Download/Download";
@@ -23,9 +23,11 @@ export default function App() {
         setSelectedLanguage(languages.find(lang => lang.slice(0,1).join`` === language)[1])
     }
 
+    const optionRef = useRef()
+
   return (
       <>
-          <Context.Provider value={{selectedLanguage, setSelectedLanguage}}>
+          <Context.Provider value={{selectedLanguage, setSelectedLanguage, optionRef}}>
               <Header onSelect={onSelect}/>
               <Enjoy />
               <Download />

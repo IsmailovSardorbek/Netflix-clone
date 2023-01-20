@@ -105,7 +105,7 @@ export default function Footer({onSelect}) {
                         </ul>
                     </div>
                 </div>
-                <select className='language-select border-gray' ref={selectRef} onChange={() => onSelect(selectRef.current.value.toLowerCase())}>
+                <select className='language-select border-gray' ref={selectRef} onChange={() => onSelect(selectRef.current.value.toLowerCase())} >
                     <option value="English">English</option>
                     <option value="Russian">Русский</option>
                 </select>

@@ -23,11 +23,25 @@ body {
 
 
 @media (width <= 380px) {
+  .header {
+    max-height: 60vh;
+    min-height: 60vh;
+  }
+
+  .hero-content {
+    padding-top: 2rem !important;
+  }
+
   .nav-wrapper {
     padding: 1.5rem 0.5rem !important;
   }
+
   .svg-icon-netflix-logo {
     width: 90px !important;
+  }
+
+  .hero-content {
+    padding-top: 2rem;
   }
 
   .language-select {
@@ -44,19 +58,19 @@ body {
   }
 
   .hero-subtitle {
-    font-size: 25px !important;
+    font-size: 20px !important;
   }
 
   .hero-title {
-    font-size: 30px !important;
+    font-size: 25px !important;
   }
 
   .hero-text {
-    font-size: 18px !important;
+    font-size: 14px !important;
   }
 
   .finish-sign-up {
-    font-size: 17px !important;
+    font-size: 14px !important;
     padding: 1rem !important;
   }
 
@@ -69,7 +83,7 @@ body {
   }
 
   .enjoy-l h1, .d-right h1, .w-left h1, .p-right h1 {
-    font-size: 30px !important;
+    font-size: 25px !important;
   }
 
   .enjoy-l p, .d-right p, .w-left p, .p-right p {
@@ -81,7 +95,7 @@ body {
   }
 
   .question span {
-    font-size: 15px !important;
+    font-size: 12px !important;
   }
 
   .open-answer {
@@ -91,24 +105,38 @@ body {
   .answer {
     font-size: 16px !important;
   }
+
+  .questions h1 {
+    font-size: 22px !important;
+  }
 }
 
 
 @media (381px <= width <= 426px) {
+
+  .header {
+    min-height: 70vh;
+    max-height: 70vh;
+  }
+
+  .hero-content {
+    padding-top: 2rem;
+  }
+
   .nav-right {
     gap: 0.5rem !important;
   }
 
   .hero-subtitle {
-    font-size: 28px !important;
+    font-size: 22px !important;
   }
 
   .hero-title {
-    font-size: 34px !important;
+    font-size: 28px !important;
   }
 
   .hero-text {
-    font-size: 20px !important;
+    font-size: 18px !important;
   }
 
   .finish-sign-up {
@@ -122,7 +150,7 @@ body {
 
 
   .enjoy-l h1, .d-right h1, .w-left h1, .p-right h1 {
-    font-size: 32px !important;
+    font-size: 30px !important;
   }
 
 
@@ -141,13 +169,14 @@ body {
   .answer {
     font-size: 18px !important;
   }
+
+  .questions h1 {
+    font-size: 24px !important;
+  }
 }
 
 
 @media (426px <= width <= 768px) {
-  .hero-content {
-    padding-top: 2rem !important;
-  }
 
   .hero-subtitle {
     font-size: 30px !important;

@@ -1,13 +1,13 @@
 import './navbar.css'
 import logo from '../../images/logo.jpeg'
-import {useContext, useRef} from "react";
+import {useContext, useEffect, useRef} from "react";
 import {Context} from "../../App";
 
 export default function Navbar({ onSelect }) {
 
-    const {selectedLanguage, setSelectedLanguage} = useContext(Context)
+    const {selectedLanguage, setSelectedLanguage, optionRef} = useContext(Context)
 
-    const optionRef = useRef()
+
     return (
         <>
             <div className='navbar'>
@@ -24,7 +24,7 @@ export default function Navbar({ onSelect }) {
                             </svg>
                         </a>
                         <div className="nav-right">
-                            <select className='language-select' ref={optionRef} onChange={() => onSelect(optionRef.current.value.toLowerCase())} >
+                            <select className='language-select' ref={optionRef} onChange={() => onSelect(optionRef.current.value.toLowerCase())}>
                                 <option value="English">English</option>
                                 <option value="Russian">Русский</option>
                             </select>
