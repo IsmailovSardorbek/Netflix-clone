@@ -2,6 +2,7 @@ import './navbar.css'
 import logo from '../../images/logo.jpeg'
 import { useContext, useEffect, useRef } from 'react'
 import { Context } from '../../App'
+import { Link } from 'react-router-dom'
 
 export default function Navbar({ onSelect }) {
   const { selectedLanguage, setSelectedLanguage, optionRef } =
@@ -38,7 +39,9 @@ export default function Navbar({ onSelect }) {
                 <option value="Russian">Русский</option>
               </select>
 
-              <button className="sign-out">{selectedLanguage.signOut}</button>
+              <Link to="/login">
+                <button className="sign-out">{selectedLanguage.signOut}</button>
+              </Link>
             </div>
           </div>
         </div>

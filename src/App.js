@@ -6,8 +6,9 @@ import Watch from './components/Watch/Watch'
 import KidsProfile from './components/KidsProfile/KidsProfile'
 import Questions from './components/Questions/Questions'
 import Footer from './components/Footer/Footer'
-import './App.css'
 import languages from './data/languages.json'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import './App.css'
 
 export const Context = createContext({})
 
@@ -24,17 +25,23 @@ export default function App() {
     )
   }
 
+  const optionRef = useRef()
+
   return (
     <>
-      <Context.Provider value={{ selectedLanguage, setSelectedLanguage }}>
-        <Header onSelect={onSelect} />
-        <Enjoy />
-        <Download />
-        <Watch />
-        <KidsProfile />
-        <Questions />
-        <Footer onSelect={onSelect} />
-      </Context.Provider>
+      <BrowserRouter>
+        <Context.Provider
+          value={{ selectedLanguage, setSelectedLanguage, optionRef }}
+        >
+          <Header onSelect={onSelect} />
+          <Enjoy />
+          <Download />
+          <Watch />
+          <KidsProfile />
+          <Questions />
+          <Footer onSelect={onSelect} />
+        </Context.Provider>
+      </BrowserRouter>
     </>
   )
 }
