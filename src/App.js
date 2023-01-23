@@ -1,19 +1,16 @@
 import { useState, createContext, useEffect, useRef } from 'react'
-import Enjoy from './components/Enjoy/Enjoy'
-import Header from './components/Header/Header'
-import Download from './components/Download/Download'
-import Watch from './components/Watch/Watch'
-import KidsProfile from './components/KidsProfile/KidsProfile'
-import Questions from './components/Questions/Questions'
-import Footer from './components/Footer/Footer'
+import Home from './pages/Home'
 import languages from './data/languages.json'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
+import NotFound from './pages/NotFound'
 
 export const Context = createContext({})
 
 export default function App() {
   const [selectedLanguage, setSelectedLanguage] = useState(languages)
+
+  const [isLogged, setIsLogged] = useState(false)
 
   useEffect(() => {
     onSelect('english')
@@ -33,13 +30,13 @@ export default function App() {
         <Context.Provider
           value={{ selectedLanguage, setSelectedLanguage, optionRef }}
         >
-          <Header onSelect={onSelect} />
-          <Enjoy />
-          <Download />
-          <Watch />
-          <KidsProfile />
-          <Questions />
-          <Footer onSelect={onSelect} />
+          <Routes>
+            <Route
+              path="/"
+              element={<Home onSelect={onSelect} isLogged={isLogged} />}
+            />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
         </Context.Provider>
       </BrowserRouter>
     </>
